@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Pharmacy</title>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="form">
+        <center>
+            <h1>PHARMACY</h1>
+            <h1>DRUGS</h1>
+            <table>
+                <tr>
+                    <td>Brand Name: </td>
+                    <td><input type="text" id="brandname"></td>
+                </tr>
+                <tr>
+                    <td>Generic Name: </td>
+                    <td><input type="text" id="genericname"></td>
+                </tr>
+                <tr>
+                    <td>Stock: </td>
+                    <td><input type="number" id="stock"></td>
+                </tr>
+                <tr>
+                    <td>Price: </td>
+                    <td><input type="number" id="price"> </td>
+                </tr>
+
+            </table>
+            <input type="button" id="add" value="Add" onclick="addRow()">
+
+    </div>
+    </center>
+    <center>
+        <div id="data">
+
+            <h4>Drugs Available</h4>
+            <table id="medicine" border="1" cellpadding="5">
+                <tr>
+                    <td><b>Brand Name</b></td>
+                    <td><b>Generic Name</b></td>
+                    <td><b>Stock</b></td>
+                    <td><b>Price</b></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+
+                    <td>
+                        <h4>Add Quantity</h4>
+                    </td>
+
+                    <td> <label>Input Brand Name</label>
+                        <input type='text' id='quant_brandname'> </td>
+
+                    <td> <label>Quantity</label>
+                        <input type='number' id='quant_add'></td>
+
+                    <td> <button onclick="addQuantity()">Add</button> </td>
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <h4>Sell</h4>
+                    </td>
+
+                    <td> <label>Input Brand Name</label>
+                        <input type='text' id='sell_brandname'> </td>
+
+                    <td> <label>Quantity</label>
+                        <input type='number' id='sell_quantity'></td>
+
+                    <td> <button onclick="sell()">Sell</button> </td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <h4>Edit Price</h4>
+                    </td>
+
+                    <td> <label>Input Brand Name</label>
+                        <input type='text' id='edit_brandname'> </td>
+
+                    <td> <label>New Price</label>
+                        <input type='number' id='edit_price'></td>
+
+                    <td> <button onclick="edit()">Edit</button> </td>
+                </tr>
+
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>
